@@ -1,19 +1,20 @@
-import React from 'react'
-import NavBar from './NavBar'
-import Home from './Home'
-import About from './About'
+import { Route, Routes } from "react-router-dom";
+import About from "./About";
+import Home from "./Home";
+import NavBar from "./NavBar";
 
 const Portfolio = () => {
   return (
-    <div className=' bg-gradient-to-r from-purple-600 via-indigo-500  to-purple-600 min-h-screen flex   items-center'>
-        <NavBar/>
-        <div className='flex flex-col justify-center items-center w-full'>
+        <div className="min-h-screen w-full flex flex-col gap-y-10  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950 ">
+            <NavBar />
             <Home />
             <About/>
+            {/* <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="/about" element={<About/>}/>
+            </Routes> */}
         </div>
-        
-    </div>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;
