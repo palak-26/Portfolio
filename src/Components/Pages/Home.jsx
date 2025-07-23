@@ -1,17 +1,23 @@
 import React from 'react'
-import photo from '../assets/palak.png'
+import photo from '../../assets/palak.png'
 import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaHackerrank, FaInstagram } from 'react-icons/fa';
 import { SiLeetcode, SiGeeksforgeeks, SiGmail } from 'react-icons/si';
-import { AnimatePresence, scale, transform } from 'framer-motion';
+import {motion} from 'framer-motion'
 const Home = () => {
+    const scale ={
+    hidden: {opacity:0 , scale:0},
+    visible:{opacity:100, scale :1},
+    wait: {duration:0.5},
+  }
   return (
-    <div id='Home'>
-        <div id="heroSection" className='flex justify-around relative top-10 items-center' >
+    <section id='Home' className='py-20'>
+        <div >
+        <div id="heroSection" className='flex justify-around relative top-24 items-center' >
             <div id='leftSection' className='flex flex-col gap-y-2'>
-                <h1 className='text-5xl font-bold text-white' >Hi There,</h1>
-                <h1 className='text-5xl font-bold text-white' >I'm Palak Neekhra</h1>
-                <h3 className='text-xl font-bold text-white' >I Am An Aspiring 
+                <h1 className='text-7xl font-bold text-white' >Hi There,</h1>
+                <h1 className='text-7xl font-bold text-white' >I'm Palak Neekhra</h1>
+                <h3 className='text-3xl font-bold text-white' >I Am An Aspiring 
                     <span className='text-[#A8FFEB] text-2xl'>
                         <Typewriter
                        words={[" Full Stack Developer"," Java Developer"]}
@@ -24,7 +30,7 @@ const Home = () => {
                     />
                     </span>
                 </h3>
-                <button className=' mt-2 text-white bg-violet-600 shadow-2xl font-bold border-white rounded-full w-fit py-2 px-5 hover:scale-105 transition-transform duration-100'>
+                <button className=' mt-2 text-white text-lg bg-violet-600 shadow-2xl font-bold border-white rounded-full w-fit py-2 px-5 hover:scale-105 transition-transform duration-100'>
                     <a href="/resume.pdf"
                     target='_blank'
                     rel="noopener noreferrer"
@@ -41,18 +47,22 @@ const Home = () => {
                     <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg' ><a href="https://www.instagram.com/palakkk____26?igsh=ZHB2eDA2Y2E1YWh5" target="_blank"><FaInstagram className=' text-[#A8FFEB]'/></a></div>
                 </div>
             </div>
-            <AnimatePresence>
-                <motion.div
-                key="rightSection"
-                initial={{opacity:0, scale:0.5}}
-                animate={{opacity:1, scale:1}}
-                transition={{duration:1}}
-                >
-                       <motion.img src={photo} alt="" className=' rounded-full h-80 w-80 shadow-2xl '/>
-                </motion.div>
-            </AnimatePresence>
+
+            <motion.div
+            variants={scale}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{once: false , amount:0.5}}
+            transition={{duration: 0.8}}
+            onWaiting="wait"
+            >
+                <img src={photo} alt="" className='shadow-black rounded-full h-96 w-96 shadow-xl scale-1 hover:scale-105 transition-all duration-1000 cursor-pointer '/>
+            </motion.div>
+                 
+            
         </div>
     </div>
+    </section>
   )
 }
 

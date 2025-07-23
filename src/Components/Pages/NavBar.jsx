@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from "react";
 import {Typewriter} from "react-simple-typewriter";
-import logo from "../assets/logo.png"
+import logo from "../../assets/logo.png"
 
 const NavBar = () => {
    
@@ -9,7 +9,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 5;
+      const scrolled = window.scrollY >1;
       setIsScrolled(scrolled);
     };
 
@@ -45,19 +45,19 @@ const NavBar = () => {
                     <div className='absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 '></div>
                 </li>
                 <li className='group relative'>
-                    <a href="#Skills" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Skills</a>
+                    <a href="/#Skills" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Skills</a>
                     <div className='absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 '></div>
                 </li>
                 <li className='group relative'>
-                    <a href="#Education" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Education</a>
+                    <a href="/#Projects" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Projects</a>
                     <div className='absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 '></div>
                 </li>
                 <li className='group relative'>
-                    <a href="#Projects" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Projects</a>
+                    <a href="/#Education" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Education</a>
                     <div className='absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 '></div>
                 </li>
                 <li className='group relative'>
-                    <a href="#Contact" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Contact</a>
+                    <a href="/#Contact" className='hover:text-indigo-700 cursor-pointer transition-colors duration-300 '>Contact</a>
                     <div className='absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300 '></div>
                 </li>
                 </ul>

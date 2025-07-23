@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Welcome from "./Components/Welcome";
+import Welcome from "./Components/Pages/Welcome";
 import Portfolio from "./Components/Portfolio";
 import { AnimatePresence, motion } from "framer-motion";
 
