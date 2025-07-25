@@ -17,8 +17,6 @@ import c from '../../assets/Skills/c.svg';
 import cpp from '../../assets/Skills/c-1.svg';
 import java from '../../assets/Skills/java-4.svg';
 import bs from '../../assets/Skills/bootstrap-5-1.svg';
-import arrow from '../../assets/arrow.svg';
-import photo from '../../assets/palak-1.png';
 
 const Skills = () => {
   const slideLeft = {
@@ -26,16 +24,11 @@ const Skills = () => {
     visible: { opacity: 1, x: 0 },
   };
 
-  const slideRight = {
-    hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0 },
-  };
-
   return (
-    <div id="Skills" className="min-h-screen w-full py-16 justify-center px-6 md:px-12 lg:px-20 flex flex-col items-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
+    <div id="Skills" className="min-h-screen w-full py-16 justify-center items-center  px-6 md:px-12 lg:px-20 flex flex-col bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
       <h1 className="text-white font-bold text-3xl sm:text-4xl mb-12 text-center">My Skills Set</h1>
 
-      <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
+      <div className="flex flex-col lg:flex-row items-center justify-center  gap-12 w-full">
         {/* Skill Boxes */}
         <motion.div
           variants={slideLeft}
@@ -87,17 +80,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-        </motion.div>
-
-        {/* Personal Image */}
-        <motion.div
-          variants={slideRight}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.3 }}
-          transition={{ duration: 0.6 }}
-        >
-          <img src={photo} alt="Palak" className="-mt-7 h-44 w-44 md:h-56 md:w-56 lg:h-72 lg:w-72 object-cover rounded-full border-4 border-white shadow-xl" />
         </motion.div>
       </div>
       

@@ -9,37 +9,37 @@ import Contact from "./Pages/Contact";
 
 const Portfolio = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:bg-gray-900  ">
       {/* Navigation */}
-      <NavBar />
+      <NavBar className="dark:bg-gray-900" />
 
       {/* Home Section */}
-      <section >
+      <section className="dark:bg-gray-900" >
         <Home />
       </section>
 
       {/* About Section */}
-      <section >
+      <section className="dark:bg-gray-900" >
         <About />
       </section>
 
       {/* Skills Section */}
-      <section >
+      <section className="dark:bg-gray-900" >
         <Skills />
       </section>
 
       {/* Projects Section */}
-      <section >
+      <section className="dark:bg-gray-900" >
         <Projects />
       </section>
 
       {/* Education Section */}
-      <section >
+      <section className="dark:bg-gray-900">
         <Education />
       </section>
 
       {/* Contact Section */}
-      <section >
+      <section className="dark:bg-gray-900" >
         <Contact />
       </section>
 

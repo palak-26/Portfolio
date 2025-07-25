@@ -38,7 +38,7 @@ const About = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: false, amount: 0.4 }}
-          transition={{ duration: 0.8, ease: easeIn }}
+          transition={{ duration: 0.2, ease: easeIn }}
         >
           <div className='h-40 w-40 sm:h-44 sm:w-44 md:h-60 md:w-60 lg:h-72 lg:w-72'>
             <img
@@ -55,12 +55,12 @@ const About = () => {
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: false, amount: 0.5 }}
-                  transition={{ duration: 1}}
+                  transition={{ duration: 0.3}}
                 >
         <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl border-2 p-6 md:p-6 text-white w-full lg:w-full">
           <p className="text-sm sm:text-base md:text-base lg:text-lg font-semibold leading-relaxed">
           <Typewriter
-          words={[" I am a final-year Computer Science undergraduate with a strong foundation in software development and a passion for building scalable, user-centric solutions. My technical expertise spans the MERN stack (MongoDB, Express.js, React.js, Node.js) and Data Structures and Algorithms in Java, enabling me to develop full-stack applications and write efficient, maintainable code. I am an open-source contributor with GirlScript Summer of Code, where I collaborated on real-world projects and worked within diverse development teams. Known for being adaptive, optimistic, and a fast learner, I thrive in collaborative environments and continuously seek opportunities to expand my knowledge.With a proactive mindset, strong communication skills, and a commitment to teamwork, I aim to contribute meaningfully to innovative and impact-driven engineering teams."]}
+          words={["I’m a final-year Computer Science undergraduate who is passionate, self-motivated, and growth-driven. Known for being adaptive, optimistic, and a quick learner, I thrive in collaborative environments and enjoy working with diverse teams. I have strong communication skills, a proactive mindset, and a genuine eagerness to explore new ideas and technologies. I value continuous learning and always seek opportunities to improve and contribute meaningfully."]}
           cursor
           cursorStyle="|"
           typeSpeed={50}

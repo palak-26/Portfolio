@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import logo from "../../assets/logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
+import DarkModeToggle from "./DarkModeToggle";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,8 +20,8 @@ const NavBar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50">
-      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-white/80 backdrop-blur"} py-3`}>
-        <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-white/80 backdrop-blur"} py-5`}>
+        <div className="max-w-7xl mx-auto px-4 flex justify-around items-center">
           {/* Logo + Name */}
           <div className="flex items-center gap-4">
             <img src={logo} alt="Logo" className="h-10" />
@@ -37,7 +38,8 @@ const NavBar = () => {
           </div>
 
           {/* Desktop Nav */}
-          <ul className="hidden md:flex gap-6 text-black font-medium">
+          <div className="flex justify-evenly items-center">
+            <ul className="hidden md:flex gap-6 text-black font-medium">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
               <li key={item} className="group relative">
                 <a
@@ -46,10 +48,13 @@ const NavBar = () => {
                 >
                   {item}
                 </a>
-                <div className="absolute -bottom-2 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </li>
             ))}
           </ul>
+          <div className="rounded-full h-8 w-8 ml-6 mr-4">
+            <DarkModeToggle/>
+          </div>
 
           {/* Hamburger Menu */}
           <div className="md:hidden">
@@ -60,9 +65,16 @@ const NavBar = () => {
               {isOpen ? <FiX /> : <FiMenu />}
             </button>
           </div>
+          <div>
+            <button>
+
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Nav */}
+        
+          </div>
+          {/* Mobile Nav */}
         {isOpen && (
           <div className="md:hidden px-6 mt-4 pb-4 space-y-3 flex flex-col items-center text-black font-semibold">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (

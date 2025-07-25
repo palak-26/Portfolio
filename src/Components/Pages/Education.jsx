@@ -80,7 +80,7 @@ const Education = () => {
             <div className="bg-purple-950 rounded-xl p-6 text-center shadow-lg">
               <h3 className="text-xl md:text-2xl text-white font-bold">Secondary Education</h3>
               <p className="text-cyan-400 text-base md:text-lg font-semibold mt-1">Ashoka Hall Senior Secondary School, Jabalpur</p>
-              <p className="text-rose-200 mt-1 font-semibold">2020–2021</p>
+              <p className="text-rose-200 mt-1 font-semibold">2019–2020</p>
               <p className="text-slate-300 mt-2 font-semibold">Percentage: 90.8%</p>
             </div>
           </div>
