@@ -14,11 +14,11 @@ const Education = () => {
 
   return (
     <section id="Education" className="min-h-screen w-full  justify-center p-28 md:px-10 lg:px-20 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
-      <h2 className="text-3xl md:text-4xl text-white font-bold text-center mb-24">Education</h2>
+      <h2 className="text-3xl md:text-4xl text-white font-bold text-center mb-16">Education</h2>
 
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical Center Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white z-0"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white z-0 text-base"></div>
 
         {/* Timeline Item 1 */}
         <motion.div
@@ -31,11 +31,11 @@ const Education = () => {
         >
           {/* Left content */}
           <div className="w-full md:w-1/2 md:pr-8 z-10">
-            <div className="bg-purple-950 rounded-xl p-6 text-center shadow-lg">
-              <h3 className="text-xl md:text-2xl text-white font-bold">B.Tech in Computer Science</h3>
-              <p className="text-cyan-400 text-base md:text-lg font-semibold mt-1">Baderia Global Institute of Engineering and Management, Jabalpur</p>
-              <p className="text-rose-200 mt-1 font-semibold">2022–2026</p>
-              <p className="text-slate-300 mt-2 font-semibold">CGPA: 8.03</p>
+            <div className="bg-purple-950 rounded-xl p-6 text-center shadow-lg ">
+              <h3 className=" lg:text-xl text-white font-bold">B.Tech in Computer Science</h3>
+              <p className="text-cyan-400  lg:text-lg font-semibold mt-1">Baderia Global Institute of Engineering and Management, Jabalpur</p>
+              <p className="text-rose-200 mt-1 lg:text-base font-semibold">2022–2026</p>
+              <p className="text-slate-300 mt-2 lg:text-base font-semibold">CGPA: 8.03</p>
             </div>
           </div>
 

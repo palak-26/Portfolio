@@ -32,7 +32,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="Skills" className="min-h-screen w-full py-10 justify-center px-6 md:px-12 lg:px-20 flex flex-col items-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
+    <div id="Skills" className="min-h-screen w-full py-16 justify-center px-6 md:px-12 lg:px-20 flex flex-col items-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
       <h1 className="text-white font-bold text-3xl sm:text-4xl mb-12 text-center">My Skills Set</h1>
 
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
@@ -97,7 +97,7 @@ const Skills = () => {
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <img src={photo} alt="Palak" className="h-72 w-72 object-cover rounded-full border-4 border-white shadow-xl" />
+          <img src={photo} alt="Palak" className="-mt-7 h-44 w-44 md:h-56 md:w-56 lg:h-72 lg:w-72 object-cover rounded-full border-4 border-white shadow-xl" />
         </motion.div>
       </div>
       

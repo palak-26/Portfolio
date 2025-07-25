@@ -14,7 +14,7 @@ const Portfolio = () => {
       <NavBar />
 
       {/* Home Section */}
-      <section className="min-h-screen w-full flex flex-col justify-center px-4 md:px-10 lg:px-20 gap-y-10 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
+      <section >
         <Home />
       </section>
 

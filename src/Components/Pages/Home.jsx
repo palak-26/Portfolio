@@ -11,14 +11,15 @@ const Home = () => {
     wait: {duration:0.5},
   }
   return (
+
     <section id='Home' >
         <div >
-        <div id="heroSection" className='flex justify-around sm:flex-col-reverse lg:flex-row md:flex-col-reverse relative top-24 items-center   gap-5 ' >
-            <div id='leftSection' className='flex flex-col gap-y-2'>
-                <h1 className='lg:text-7xl font-bold text-white ' >Hi There,</h1>
-                <h1 className='text-7xl font-bold text-white' >I'm Palak Neekhra</h1>
-                <h3 className='text-3xl font-bold text-white' >I Am An Aspiring 
-                    <span className='text-[#A8FFEB] text-2xl'>
+        <div id="heroSection" className='min-h-screen w-full flex flex-col-reverse justify-center items-center px-4 md:px-10 lg:px-20  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  justify-evenly lg:flex-row items-center gap-5 ' >
+            <div id='leftSection' className='flex flex-col  gap-y-2'>
+                <h1 className='lg:text-5xl font-bold text-white md:text-3xl text-xl px-2 ' >Hi There,</h1>
+                <h1 className='text-2xl lg:text-5xl md:text-3xl font-bold text-white px-2' >I'm Palak Neekhra</h1>
+                <h3 className='text-xl lg:text-4xl md:text-xl font-bold text-white px-2' >I Am An Aspiring 
+                    <span className='text-[#A8FFEB] text-xl'>
                         <Typewriter
                        words={[" Full Stack Developer"," Java Developer"]}
                        loop={true}
@@ -30,7 +31,7 @@ const Home = () => {
                     />
                     </span>
                 </h3>
-                <button className=' mt-2 text-white text-lg bg-violet-600 shadow-2xl font-bold border-white rounded-full w-fit py-2 px-5 hover:scale-105 transition-transform duration-100'>
+                <button className=' w-20 lg:w-fit p-2 lg:p-5  mt-2 text-white text-center text-sm bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
                     <a href="/resume.pdf"
                     target='_blank'
                     rel="noopener noreferrer"
@@ -38,7 +39,7 @@ const Home = () => {
                 </button>
                 
 
-                <div className='flex w-fit gap-x-4 mt-2 text-2xl'>
+                <div className='flex w-fit gap-x-4 mt-2 text-lg lg:text-2xl'>
                     <div className='h-auto w-auto  rounded-full bg-slate-950 p-2  hover:scale-105 transition-transform duration-100 shadow-lg'><a href="https://www.linkedin.com/in/palak-neekhra-98b518217/" target="_blank"><FaLinkedin className=' text-[#A8FFEB]'/></a></div>
                     <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg'><a href="https://github.com/palak-26" target="_blank"><FaGithub className='text-[#A8FFEB]'/></a></div>
                     <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg'><a href="https://leetcode.com/u/palak-26/" target="_blank"><SiLeetcode className='text-[#A8FFEB]'/></a></div>
@@ -55,7 +56,7 @@ const Home = () => {
             viewport={{ once: false, amount: 0.5 }}
             transition={{ duration: 0.8 }}
             >
-                <div className="h-44 w-44 sm:h-56 sm:w-56 md:h-72 md:w-72 lg:h-96 lg:w-96">
+                <div className="h-44 w-44 mt-20 sm:h-56 sm:w-56 md:h-72 md:w-72 lg:h-96 lg:w-96 ">
                     <img
                     src={photo}
                     alt="Palak Neekhra"
