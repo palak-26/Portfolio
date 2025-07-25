@@ -4,16 +4,15 @@ const Contact = () => {
   return (
     <section
       id="Contact"
-      className="py-16 px-4 md:px-10 lg:px-32 flex items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950"
+      className="min-h-screen w-full py-16 px-4 md:px-10 lg:px-32 flex items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950"
     >
-      <fieldset className="w-full max-w-3xl bg-white bg-opacity-50 shadow-lg shadow-black p-6 md:p-10 rounded-3xl">
+      <fieldset className="w-full max-w-4xl bg-white bg-opacity-50 shadow-lg shadow-black p-6 md:p-10 rounded-3xl">
         <legend className="text-center ">
-          <label
-            htmlFor="Contact"
-            className="text-violet-950 text-4xl md:text-5xl font-bold sm:mt-28"
-          >
-            Contact
-          </label>
+          <div className="text-center mb-6 p-0 ">
+            <h2 className="text-violet-950 text-4xl md:text-5xl mt-28 font-bold">
+               Contact
+            </h2>
+          </div>
         </legend>
 
         <form className="flex flex-col gap-6">

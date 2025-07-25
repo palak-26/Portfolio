@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <section id='Home' >
         <div >
-        <div id="heroSection" className='flex justify-around relative top-24 items-center  sm:flex flex-col-reverse gap-5 ' >
+        <div id="heroSection" className='flex justify-around sm:flex-col-reverse lg:flex-row md:flex-row relative top-24 items-center   gap-5 ' >
             <div id='leftSection' className='flex flex-col gap-y-2'>
                 <h1 className='lg:text-7xl font-bold text-white ' >Hi There,</h1>
                 <h1 className='text-7xl font-bold text-white' >I'm Palak Neekhra</h1>
@@ -56,7 +56,7 @@ const Home = () => {
             transition={{duration: 0.8}}
             onWaiting="wait"
             >
-                <img src={photo} alt="" className='shadow-black rounded-full h-96 w-96 shadow-xl sm:h-40 sm:w-40 scale-1 hover:scale-105 transition-all duration-1000 cursor-pointer '/>
+                <img src={photo} alt="" className='shadow-black rounded-full h-96 w-96 shadow-xl sm:h-56 sm:w-56 md:h-64 md:h-64 lg:h-96 lg:w-96  scale-1 hover:scale-105 transition-all duration-1000 cursor-pointer '/>
             </motion.div>
                  
             

@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <div
       id="Projects"
-      className="px-4 py-20 md:px-10 lg:px-20 flex flex-col gap-12 items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950"
+      className="min-h-screen w-full px-4  md:px-10 lg:px-20 flex flex-col gap-24 items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950"
     >
       {/* Heading */}
       <h1 className="text-white font-bold text-3xl sm:text-4xl text-center">Projects</h1>

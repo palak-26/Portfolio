@@ -32,7 +32,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="Skills" className="py-20 px-6 md:px-12 lg:px-20 flex flex-col items-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
+    <div id="Skills" className="min-h-screen w-full py-10 justify-center px-6 md:px-12 lg:px-20 flex flex-col items-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
       <h1 className="text-white font-bold text-3xl sm:text-4xl mb-12 text-center">My Skills Set</h1>
 
       <div className="flex flex-col lg:flex-row items-center justify-between gap-12 w-full">
@@ -83,7 +83,7 @@ const Skills = () => {
               <div className="flex justify-center gap-4 flex-wrap">
                 <img src={tcss} alt="Tailwind" className="h-14 w-20" />
                 <img src={bs} alt="Bootstrap" className="h-14" />
-                <img src={sql} alt="MySQL" className="h-14" />
+                <img src={sql} alt="MySQL" className="h-14 bg-slate-50 rounded-md" />
               </div>
             </div>
           </div>
@@ -100,18 +100,7 @@ const Skills = () => {
           <img src={photo} alt="Palak" className="h-72 w-72 object-cover rounded-full border-4 border-white shadow-xl" />
         </motion.div>
       </div>
-
-      {/* Decorative Arrow (optional) */}
-      <motion.div
-        variants={slideRight}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false, amount: 0.3 }}
-        transition={{ duration: 0.6 }}
-        className="mt-12"
-      >
-        <img src={arrow} alt="Arrow" className="w-48 mx-auto rotate-180 opacity-100 visible sm:invisible" />
-      </motion.div>
+      
     </div>
   );
 };
