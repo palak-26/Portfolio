@@ -31,7 +31,7 @@ const Home = () => {
                     />
                     </span>
                 </h3>
-                <button className='w-36 text-xl lg:text-2xl  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
+                <button className='w-32 text-base lg:text-xl  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
                     <a href="/resume.pdf"
                     target='_blank'
                     rel="noopener noreferrer"
