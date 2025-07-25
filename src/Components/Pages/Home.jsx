@@ -14,12 +14,12 @@ const Home = () => {
 
     <section id='Home' >
         <div >
-        <div id="heroSection" className='min-h-screen w-full flex flex-col-reverse justify-center items-center px-4 md:px-10 lg:px-20  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  justify-evenly lg:flex-row items-center gap-5 ' >
+        <div id="heroSection" className='min-h-screen w-full flex flex-col-reverse justify-center items-center px-4 md:px-20 lg:px-28  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  justify-evenly lg:flex-row items-center gap-5 ' >
             <div id='leftSection' className='flex flex-col  gap-y-2'>
                 <h1 className='lg:text-5xl font-bold text-white md:text-3xl text-xl px-2 ' >Hi There,</h1>
                 <h1 className='text-2xl lg:text-5xl md:text-3xl font-bold text-white px-2' >I'm Palak Neekhra</h1>
                 <h3 className='text-xl lg:text-4xl md:text-xl font-bold text-white px-2' >I Am An Aspiring 
-                    <span className='text-[#A8FFEB] text-xl'>
+                    <span className='text-[#A8FFEB]  md:text-xl lg:text-xl'>
                         <Typewriter
                        words={[" Full Stack Developer"," Java Developer"]}
                        loop={true}
@@ -31,10 +31,11 @@ const Home = () => {
                     />
                     </span>
                 </h3>
-                <button className=' w-20 lg:w-fit p-2 lg:p-5  mt-2 text-white text-center text-sm bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
+                <button className='w-36 text-xl lg:text-2xl  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
                     <a href="/resume.pdf"
                     target='_blank'
                     rel="noopener noreferrer"
+                    className=''
                     >Resume</a>
                 </button>
                 
@@ -60,7 +61,7 @@ const Home = () => {
                     <img
                     src={photo}
                     alt="Palak Neekhra"
-                    className="h-full w-full rounded-full object-cover shadow-black shadow-xl hover:scale-105 transition-all duration-1000 cursor-pointer"
+                    className="h-full w-full rounded-full object-cover sticky shadow-black shadow-xl hover:scale-105 transition-all duration-1000 cursor-pointer"
                     />
                 </div>
             </motion.div>    
