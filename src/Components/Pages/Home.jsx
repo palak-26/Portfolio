@@ -14,7 +14,7 @@ const Home = () => {
 
     <section id='Home' >
         <div >
-        <div id="heroSection" className='min-h-screen w-full flex flex-col-reverse justify-center items-center px-4 md:px-20 lg:px-28  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  justify-evenly lg:flex-row items-center gap-5 ' >
+        <div id="heroSection" className='min-h-screen w-full flex flex-col-reverse justify-center items-center px-4 md:px-20 lg:px-28  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950 dark:bg-gradient-to-r dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100  justify-evenly lg:flex-row items-center gap-5 ' >
             <div id='leftSection' className='flex flex-col  gap-y-2'>
                 <h1 className='lg:text-5xl font-bold text-white md:text-3xl text-xl px-2 ' >Hi There,</h1>
                 <h1 className='text-2xl lg:text-5xl md:text-3xl font-bold text-white px-2' >I'm Palak Neekhra</h1>

@@ -13,7 +13,7 @@ const Education = () => {
   };
 
   return (
-    <section id="Education" className="min-h-screen w-full  justify-center p-28 md:px-10 lg:px-20 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
+    <section id="Education" className="min-h-screen w-full  justify-center p-28 md:px-10 lg:px-20 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100">
       <h2 className="text-3xl md:text-4xl text-white font-bold text-center mb-16">Education</h2>
 
       <div className="relative max-w-5xl mx-auto">

@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const Welcome = ({ onComplete }) => {
   return (
     <AnimatePresence>
-      <div className="bg-violet-950 min-h-screen w-full flex items-center justify-center overflow-hidden">
+      <div className="bg-violet-950 min-h-screen w-full flex items-center justify-center overflow-hidden dark:bg-slate-900">
         <motion.div
           key="welcome"
           className="bg-transparent flex items-center justify-center w-full h-full"

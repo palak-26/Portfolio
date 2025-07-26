@@ -3,14 +3,14 @@ import { Typewriter } from "react-simple-typewriter";
 import logo from "../../assets/logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import DarkModeToggle from "./DarkModeToggle";
-
-const NavBar = () => {
+import logodark from "../../assets/logodark.png"
+const NavBar = (isDark) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrolled = window.scrollY > 1;
+      const scrolled = window.scrollY > 10;
       setIsScrolled(scrolled);
     };
 
@@ -19,13 +19,19 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50">
-      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md" : "bg-white/80 backdrop-blur"} py-5`}>
+    <div className="fixed top-0 left-0 w-full z-50 ">
+      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md  dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} py-5`}>
         <div className="max-w-7xl mx-auto px-4 flex justify-around items-center">
           {/* Logo + Name */}
-          <div className="flex items-center gap-4">
-            <img src={logo} alt="Logo" className="h-10" />
-            <h1 className="text-black text-lg font-bold hover:cursor-pointer">
+          <div className="flex items-center gap-4 ">
+            {/* Light Mode Logo (black) */}
+                <img src={logo} alt="Logo Light" className="h-10 block dark:hidden" />
+
+            {/* Dark Mode Logo (cyan) */}
+                <img src={logodark} alt="Logo Dark" className="h-10 hidden dark:block" />
+
+            
+            <h1 className="text-black dark:text-white text-lg font-bold hover:cursor-pointer">
               <Typewriter
                 words={["Palak Neekhra"]}
                 cursor
@@ -39,7 +45,7 @@ const NavBar = () => {
 
           {/* Desktop Nav */}
           <div className="flex justify-evenly items-center">
-            <ul className="hidden md:flex gap-6 text-black font-medium">
+            <ul className="hidden md:flex gap-6 text-black font-medium dark:text-white">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
               <li key={item} className="group relative">
                 <a
@@ -57,7 +63,7 @@ const NavBar = () => {
           </div>
 
           {/* Hamburger Menu */}
-          <div className="md:hidden">
+          <div className="visible md:hidden lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black text-2xl"
