@@ -66,14 +66,9 @@ const NavBar = (isDark) => {
           <div className="visible md:hidden lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black text-2xl"
+              className="text-black dark:text-white text-2xl"
             >
               {isOpen ? <FiX /> : <FiMenu />}
-            </button>
-          </div>
-          <div>
-            <button>
-
             </button>
           </div>
         </div>
@@ -82,7 +77,7 @@ const NavBar = (isDark) => {
           </div>
           {/* Mobile Nav */}
         {isOpen && (
-          <div className="md:hidden px-6 mt-4 pb-4 space-y-3 flex flex-col items-center text-black font-semibold">
+          <div className="md:hidden px-6 mt-4 pb-4 space-y-3 flex flex-col items-center text-black dark:text-white font-semibold">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
               <a
                 key={item}
