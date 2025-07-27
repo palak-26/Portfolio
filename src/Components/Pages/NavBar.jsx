@@ -4,9 +4,11 @@ import logo from "../../assets/logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
 import DarkModeToggle from "./DarkModeToggle";
 import logodark from "../../assets/logodark.png"
-const NavBar = (isDark) => {
+import {motion , AnimatePresence } from "framer-motion"
+const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,20 +78,29 @@ const NavBar = (isDark) => {
         
           </div>
           {/* Mobile Nav */}
-        {isOpen && (
-          <div className="md:hidden px-6 mt-4 pb-4 space-y-3 flex flex-col items-center text-black dark:text-white font-semibold">
-            {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
-              <a
-                key={item}
-                href={`/#${item}`}
-                className="hover:text-indigo-700 transition-colors duration-200"
-                onClick={() => setIsOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        )}
+        <AnimatePresence>
+  {isOpen && (
+    <motion.div
+      className="md:hidden px-6 mt-4 pb-4 space-y-3 flex flex-col items-center text-black dark:text-white font-semibold"
+      initial={{ opacity: 0, x: 50 }}
+      animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: 50 }}
+      transition={{ duration: 0.4 }}
+    >
+      {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
+        <a
+          key={item}
+          href={`/#${item}`}
+          className="block py-2 hover:text-indigo-700 transition-colors duration-200"
+          onClick={() => setIsOpen(false)}
+        >
+          {item}
+        </a>
+      ))}
+    </motion.div>
+  )}
+</AnimatePresence>
+
       </nav>
     </div>
   );

@@ -13,35 +13,35 @@ const Portfolio = () => {
       {/* Navigation */}
       <NavBar className="dark:bg-gray-900" />
 
-      {/* Home Section */}
-      <section className="dark:bg-gray-900" >
+      Home Section
+      {/* <section className="dark:bg-gray-900" > */}
         <Home />
-      </section>
+      {/* </section> */}
 
       {/* About Section */}
-      <section className="dark:bg-gray-900" >
+      {/* <section className="dark:bg-gray-900" > */}
         <About />
-      </section>
+      {/* </section> */}
 
       {/* Skills Section */}
-      <section className="dark:bg-gray-900" >
+      {/* <section className="dark:bg-gray-900" > */}
         <Skills />
-      </section>
+      {/* </section> */}
 
       {/* Projects Section */}
-      <section className="dark:bg-gray-900" >
+      {/* <section className="dark:bg-gray-900" > */}
         <Projects />
-      </section>
+      {/* </section> */}
 
       {/* Education Section */}
-      <section className="dark:bg-gray-900">
+      {/* <section className="dark:bg-gray-900"> */}
         <Education />
-      </section>
+      {/* </section> */}
 
       {/* Contact Section */}
-      <section className="dark:bg-gray-900" >
+      {/* <section className="dark:bg-gray-900" > */}
         <Contact />
-      </section>
+      {/* </section> */}
 
       {/* Footer */}
       <footer className="w-full flex flex-col lg:gap-y-6 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
