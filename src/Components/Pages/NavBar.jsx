@@ -58,7 +58,7 @@ const NavBar = (isDark) => {
               </li>
             ))}
           </ul>
-          <div className="rounded-full h-5 w-5 -mt-4 ml-6 mr-4">
+          <div className="rounded-full h-5 w-5 -mt-4 ml-6 mr-6">
             <DarkModeToggle/>
           </div>
 
