@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={() => setIsDark(!isDark)}
-      className="text-xl p-2 rounded-full bg-white/70 backdrop-blur-lg shadow-black shadow-md  hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+      className="text-base p-2 rounded-full bg-white/70 backdrop-blur-lg shadow-black shadow-md  hover:bg-gray-200 dark:hover:bg-gray-700 transition"
       title="Toggle Dark Mode"
     >
       <div cl>

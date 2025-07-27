@@ -58,12 +58,12 @@ const NavBar = (isDark) => {
               </li>
             ))}
           </ul>
-          <div className="rounded-full h-8 w-8 ml-6 mr-4">
+          <div className="rounded-full h-5 w-5 -mt-4 ml-6 mr-4">
             <DarkModeToggle/>
           </div>
 
           {/* Hamburger Menu */}
-          <div className="visible md:hidden lg:hidden">
+          <div className="visible md:invisible lg:invisible">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-black dark:text-white text-2xl"
