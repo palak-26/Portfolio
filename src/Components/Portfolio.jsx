@@ -1,52 +1,23 @@
-import About from "./Pages/About";
-import Home from "./Pages/Home";
 import NavBar from "./Pages/NavBar";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
 import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
 import Education from "./Pages/Education";
-import Footer from "./Footer";
 import Contact from "./Pages/Contact";
+import Footer from "./Footer";
 
 const Portfolio = () => {
   return (
-    <div className="w-full overflow-x-hidden  bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:bg-gray-900  ">
-      {/* Navigation */}
-      <NavBar className="dark:bg-gray-900" />
-
-      Home Section
-      {/* <section className="dark:bg-gray-900" > */}
-        <Home />
-      {/* </section> */}
-
-      {/* About Section */}
-      {/* <section className="dark:bg-gray-900" > */}
-        <About />
-      {/* </section> */}
-
-      {/* Skills Section */}
-      {/* <section className="dark:bg-gray-900" > */}
-        <Skills />
-      {/* </section> */}
-
-      {/* Projects Section */}
-      {/* <section className="dark:bg-gray-900" > */}
-        <Projects />
-      {/* </section> */}
-
-      {/* Education Section */}
-      {/* <section className="dark:bg-gray-900"> */}
-        <Education />
-      {/* </section> */}
-
-      {/* Contact Section */}
-      {/* <section className="dark:bg-gray-900" > */}
-        <Contact />
-      {/* </section> */}
-
-      {/* Footer */}
-      <footer className="w-full flex flex-col lg:gap-y-6 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950">
-        <Footer />
-      </footer>
+    <div className="min-h-screen" id="portfolio">
+      <NavBar />
+      <section id="home"><Home /></section>
+      <section id="about"><About /></section>
+      <section id="skills"><Skills /></section>
+      <section id="projects"><Projects /></section>
+      <section id="education"><Education /></section>
+      <section id="contact"><Contact /></section>
+      <Footer />
     </div>
   );
 };

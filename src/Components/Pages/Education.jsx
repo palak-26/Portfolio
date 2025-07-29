@@ -41,6 +41,7 @@ const Education = () => {
 
           {/* Dot & Connector */}
           <div className="absolute left-1/2 transform -translate-x-1/2 bg-violet-950 w-4 h-4 rounded-full z-20"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 bg-red-700 w-3 h-3 rounded-full z-20"></div>
         </motion.div>
 
         {/* Timeline Item 2 */}

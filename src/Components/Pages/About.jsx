@@ -15,7 +15,12 @@ const About = () => {
   };
 
   return (
-    <section
+    <motion.div
+    initial={{ scale: 0.9, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 1 }}
+    >
+      <section
       id="About"
       className="min-h-screen w-full flex flex-col items-center justify-center px-4 md:px-10 lg:px-20 gap-y-10 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100"
     >
@@ -72,6 +77,7 @@ const About = () => {
         </motion.div>
       </div>
     </section>
+    </motion.div>
   );
 };
 

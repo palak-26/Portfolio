@@ -4,6 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 import { FaGithub, FaLinkedin, FaHackerrank, FaInstagram } from 'react-icons/fa';
 import { SiLeetcode, SiGeeksforgeeks, SiGmail } from 'react-icons/si';
 import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
 const Home = () => {
     const scale ={
     hidden: {opacity:0 , scale:0},
@@ -64,7 +65,8 @@ const Home = () => {
                     className="h-full w-full rounded-full object-cover sticky shadow-black shadow-xl hover:scale-105 transition-all duration-1000 cursor-pointer"
                     />
                 </div>
-            </motion.div>    
+            </motion.div>  
+             
         </div>
     </div>
     </section>

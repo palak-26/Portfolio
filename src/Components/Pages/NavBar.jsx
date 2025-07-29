@@ -5,6 +5,7 @@ import { FiMenu, FiX } from "react-icons/fi";
 import DarkModeToggle from "./DarkModeToggle";
 import logodark from "../../assets/logodark.png"
 import {motion , AnimatePresence } from "framer-motion"
+import { Link } from "react-router-dom";
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -49,16 +50,14 @@ const NavBar = () => {
           <div className="flex justify-evenly items-center">
             <ul className="hidden md:flex gap-6 text-black font-medium dark:text-white">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
-              <li key={item} className="group relative">
-                <a
-                  href={`/#${item}`}
-                  className="hover:text-indigo-700 transition-colors duration-300"
-                >
-                  {item}
-                </a>
-                <div className="absolute -bottom-5 left-0 w-full h-1 bg-indigo-700 rounded-t-md opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </li>
-            ))}
+            <li key={item}>
+              <Link
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                className="hover:text-indigo-700 transition-colors duration-300"
+              >
+                {item}
+              </Link>
+            </li>))}
           </ul>
           <div className="rounded-full h-5 w-5 -mt-4 ml-6 mr-6">
             <DarkModeToggle/>

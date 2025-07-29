@@ -1,12 +1,14 @@
 import React from 'react';
+import Footer from '../Footer';
 
 const Contact = () => {
   return (
     <section
       id="Contact"
-      className="min-h-screen w-full py-16 px-4 md:px-10 lg:px-32 flex items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100"
+      className="min-h-screen w-full gap-20 flex flex-col items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100"
     >
-      <fieldset className="w-full max-w-4xl bg-white bg-opacity-50 shadow-lg shadow-black p-6 md:p-10 rounded-3xl">
+      <div className=' w-full py-16 px-4 md:px-10 lg:px-32 flex flex-col items-center justify-center'>
+        <fieldset className="w-full max-w-4xl bg-white bg-opacity-50 shadow-lg shadow-black p-6 md:p-10 rounded-3xl">
         <legend className="text-center ">
           <div className="text-center mb-6 p-0 ">
             <h2 className="text-violet-950 text-4xl md:text-5xl mt-28 font-bold">
@@ -78,7 +80,12 @@ const Contact = () => {
           </div>
         </form>
       </fieldset>
+      </div>
+      <div className='w-full relative bottom-0 '>
+        <Footer/>
+      </div>
     </section>
+    
   );
 };
 
