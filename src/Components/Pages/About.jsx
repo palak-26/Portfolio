@@ -62,7 +62,7 @@ const About = () => {
                   viewport={{ once: false, amount: 0.5 }}
                   transition={{ duration: 0.3}}
                 >
-        <div className="bg-white bg-opacity-10 backdrop-blur-lg rounded-3xl border-2 p-6 md:p-6 text-white w-full lg:w-full">
+        <div className="bg-white/15 bg-opacity-10 dark:bg-slate-800/20 dark:backdrop-blur-lg backdrop-blur-lg rounded-3xl border-2 p-6 md:p-6 text-white w-full lg:w-full">
           <p className="text-sm sm:text-base md:text-base lg:text-lg font-semibold leading-relaxed">
           <Typewriter
           words={["I’m a final-year Computer Science undergraduate who is passionate, self-motivated, and growth-driven. Known for being adaptive, optimistic, and a quick learner, I thrive in collaborative environments and enjoy working with diverse teams. I have strong communication skills, a proactive mindset, and a genuine eagerness to explore new ideas and technologies. I value continuous learning and always seek opportunities to improve and contribute meaningfully."]}

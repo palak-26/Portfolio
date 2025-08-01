@@ -24,7 +24,7 @@ function App() {
   return (
     <>
       <AnimatePresence mode="wait">
-        <div className="overflow-y-scroll  h-screen scrollbar-hide scroll-smooth">
+        <div className="overflow-y-scroll overflow-x-hidden  h-screen scrollbar-hide scroll-smooth">
           {showWelcome ? (
           <Welcome key="welcome" />
         ) : (

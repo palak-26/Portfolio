@@ -23,7 +23,7 @@ const NavBar = () => {
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 ">
-      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md  dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} py-5`}>
+      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800/15 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} py-5`}>
         <div className="max-w-7xl mx-auto px-4 flex justify-around items-center">
           {/* Logo + Name */}
           <div className="flex items-center gap-4 ">
@@ -61,7 +61,7 @@ const NavBar = () => {
             </li>))}
             
           </ul>
-          <div className="rounded-full h-5 w-5 -mt-6 ml-6 mr-6">
+          <div className="rounded-full h-5 w-5 -mt-4 ml-6 mr-6 md:-mt-6 lg:-mt-6">
             <DarkModeToggle/>
           </div>
 
@@ -92,7 +92,7 @@ const NavBar = () => {
         <a
           key={item}
           href={`/#${item}`}
-          className="block py-2 hover:text-indigo-700 transition-colors duration-200"
+          className="block py-2 hover:text-slate-700 transition-colors duration-200"
           onClick={() => setIsOpen(false)}
         >
           {item}
