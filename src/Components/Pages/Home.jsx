@@ -1,10 +1,16 @@
 import React from 'react'
 import photo from '../../assets/palak.png'
 import { Typewriter } from 'react-simple-typewriter';
-import { FaGithub, FaLinkedin, FaHackerrank, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaHackerrank, FaInstagram, FaDownload } from 'react-icons/fa';
 import { SiLeetcode, SiGeeksforgeeks, SiGmail } from 'react-icons/si';
 import {motion} from 'framer-motion'
 import { Link } from 'react-router-dom';
+import Skills from './Skills';
+import About from './About';
+import Projects from './Projects';
+import Education from './Education';
+import Contact from './Contact';
+import { FiDownload, FiDownloadCloud } from 'react-icons/fi';
 const Home = () => {
     const scale ={
     hidden: {opacity:0 , scale:0},
@@ -32,12 +38,12 @@ const Home = () => {
                     />
                     </span>
                 </h3>
-                <button className='w-28 text-base lg:text-lg px-1 py-2  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
+                <button className=' w-36 text-base lg:text-lg px-1 py-2  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
                     <a href="/resume.pdf"
                     target='_blank'
                     rel="noopener noreferrer"
-                    className=''
-                    >Resume</a>
+                    className='flex justify-evenly justify-center items-center'
+                    >Resume <a href="/resume.pdf" download ><FiDownload/></a> </a>
                 </button>
                 
 
@@ -67,6 +73,21 @@ const Home = () => {
                 </div>
             </motion.div>  
              
+        </div>
+        <div id='about'>
+            <About/>
+        </div>
+        <div id='skills'>
+            <Skills/>
+        </div>
+        <div id='projects'>
+            <Projects/>
+        </div>
+        <div id='education'>
+            <Education/>
+        </div>
+        <div id='Contact'>
+            <Contact/>
         </div>
     </div>
     </section>

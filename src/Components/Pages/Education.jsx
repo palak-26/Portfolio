@@ -18,7 +18,7 @@ const Education = () => {
 
       <div className="relative max-w-5xl mx-auto">
         {/* Vertical Center Line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white z-0 text-base"></div>
+        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-white dark:bg-slate-600 z-0 text-base"></div>
 
         {/* Timeline Item 1 */}
         <motion.div
@@ -40,8 +40,8 @@ const Education = () => {
           </div>
 
           {/* Dot & Connector */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-violet-950 w-4 h-4 rounded-full z-20"></div>
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-red-700 w-3 h-3 rounded-full z-20"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 bg-white w-4 h-4 rounded-full z-20 "></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 bg-red-700 animate-pulse transition-all duration-75 w-4 h-4 rounded-full z-20"></div>
         </motion.div>
 
         {/* Timeline Item 2 */}
@@ -64,7 +64,7 @@ const Education = () => {
           </div>
 
           {/* Dot */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-violet-950 w-4 h-4 rounded-full z-20"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 dark:bg-[#A8FFEB] bg-violet-950 w-4 h-4 rounded-full z-20"></div>
         </motion.div>
 
         {/* Timeline Item 3 */}
@@ -87,7 +87,7 @@ const Education = () => {
           </div>
 
           {/* Dot */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 bg-violet-950 w-4 h-4 rounded-full z-20"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 dark:bg-[#A8FFEB] bg-violet-950 w-4 h-4 rounded-full z-20"></div>
         </motion.div>
       </div>
     </section>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Welcome from "./Components/Pages/Welcome";
-import Portfolio from "./Components/Portfolio";
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
 import Home from "./Components/Pages/Home";
@@ -10,7 +9,6 @@ import Education from "./Components/Pages/Education";
 import NavBar from "./Components/Pages/NavBar";
 import Skills from "./Components/Pages/Skills";
 import Projects from "./Components/Pages/Projects";
-import Footer from "./Components/Footer";
 
 function App() {
   const [showWelcome, setShowWelcome] = useState(true);
@@ -26,7 +24,8 @@ function App() {
   return (
     <>
       <AnimatePresence mode="wait">
-        {showWelcome ? (
+        <div className="overflow-y-scroll  h-screen scrollbar-hide scroll-smooth">
+          {showWelcome ? (
           <Welcome key="welcome" />
         ) : (
           <motion.div
@@ -34,6 +33,7 @@ function App() {
             initial={{ opacity: 1, scale: 1.2 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
+            
           >
             <NavBar />
             <Routes>
@@ -46,6 +46,7 @@ function App() {
             </Routes>
           </motion.div>
         )}
+        </div>
       </AnimatePresence>
     </>
   );

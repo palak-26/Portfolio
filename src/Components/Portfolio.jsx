@@ -9,7 +9,7 @@ import Footer from "./Footer";
 
 const Portfolio = () => {
   return (
-    <div className="min-h-screen" id="portfolio">
+    <div className="min-h-screen " id="portfolio">
       <NavBar />
       <section id="home"><Home /></section>
       <section id="about"><About /></section>

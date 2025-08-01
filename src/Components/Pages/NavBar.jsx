@@ -50,16 +50,18 @@ const NavBar = () => {
           <div className="flex justify-evenly items-center">
             <ul className="hidden md:flex gap-6 text-black font-medium dark:text-white">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
-            <li key={item}>
+            <li key={item} className="group space-y-2">
               <Link
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
-                className="hover:text-indigo-700 transition-colors duration-300"
+                className="group-hover:text-indigo-700 transition-colors duration-300 dark:group-hover:text-slate-500 "
               >
                 {item}
               </Link>
+              <div className="group-hover:bg-indigo-700 h-1 rounded-t-md dark:group-hover:bg-slate-300"></div>
             </li>))}
+            
           </ul>
-          <div className="rounded-full h-5 w-5 -mt-4 ml-6 mr-6">
+          <div className="rounded-full h-5 w-5 -mt-6 ml-6 mr-6">
             <DarkModeToggle/>
           </div>
 
