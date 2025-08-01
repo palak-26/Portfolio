@@ -22,11 +22,11 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="fixed top-0 left-0 w-full z-50 ">
-      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white shadow-md dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800/15 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} py-5`}>
-        <div className="max-w-7xl mx-auto px-4 flex justify-around items-center">
+    <div className="fixed top-10 left-56 p-1 w-[70%] z-50 ">
+      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white/20 shadow-md dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800/30 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} py-5`}>
+        <div className="max-w-7xl mx-auto px-4 flex justify-around items-center rounded-3xl">
           {/* Logo + Name */}
-          <div className="flex items-center gap-4 ">
+          <div className="flex items-center gap-4  ">
             {/* Light Mode Logo (black) */}
                 <img src={logo} alt="Logo Light" className="h-10 block dark:hidden" />
 
@@ -47,7 +47,7 @@ const NavBar = () => {
           </div>
 
           {/* Desktop Nav */}
-          <div className="flex justify-evenly items-center">
+          <div className="flex justify-evenly items-center mt-2 ">
             <ul className="hidden md:flex gap-6 text-black font-medium dark:text-white">
             {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
             <li key={item} className="group space-y-2">
