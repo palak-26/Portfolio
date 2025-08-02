@@ -13,7 +13,7 @@ const Education = () => {
   };
 
   return (
-    <section id="Education" className="min-h-screen w-full  justify-center p-28 md:px-10 lg:px-20 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100">
+    <section id="Education" className="min-h-screen w-full  justify-center p-28 md:px-10 lg:px-20 dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500  dark:transition-all dark:duration-100">
       <h2 className="text-3xl md:text-4xl text-white font-bold text-center mb-16">Education</h2>
 
       <div className="relative max-w-5xl mx-auto">
@@ -78,7 +78,7 @@ const Education = () => {
         >
           {/* Left content */}
           <div className="w-full md:w-1/2 md:pr-8 z-10">
-            <div className="bg-purple-950 rounded-xl p-6 text-center shadow-lg">
+            <div className="bg-purple-950 rounded-xl p-6 text-center shadow-lg ">
               <h3 className="text-xl md:text-2xl text-white font-bold">Secondary Education</h3>
               <p className="text-cyan-400 text-base md:text-lg font-semibold mt-1">Ashoka Hall Senior Secondary School, Jabalpur</p>
               <p className="text-rose-200 mt-1 font-semibold">2019–2020</p>

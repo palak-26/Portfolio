@@ -26,7 +26,7 @@ function App() {
       <AnimatePresence mode="wait">
         <div className="overflow-y-scroll   h-screen scrollbar-hide scroll-smooth">
           {showWelcome ? (
-          <Welcome key="welcome" />
+            <Welcome onComplete={() => setShowWelcome(false)} />
         ) : (
           <motion.div
             key="main"

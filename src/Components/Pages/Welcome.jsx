@@ -1,9 +1,11 @@
 import { motion, AnimatePresence } from "framer-motion";
+import MatrixCanvas from "./CoderLanding";
+import CoderLanding from "./CoderLanding";
 
 const Welcome = ({ onComplete }) => {
   return (
     <AnimatePresence>
-      <div className="bg-violet-950 min-h-screen w-full flex items-center justify-center dark:bg-slate-900">
+      <div className="bg-indigo-800 min-h-screen w-full flex items-center justify-center dark:bg-rose-950">
         <motion.div
           key="welcome"
           className="bg-transparent flex items-center justify-center w-full h-full "
@@ -22,6 +24,11 @@ const Welcome = ({ onComplete }) => {
             Welcome!!
           </motion.h1>
         </motion.div>
+        {/* <div className="relative w-full h-screen overflow-hidden bg-black">
+   <CoderLanding/> */}
+  {/* Your typing and glitch code here */}
+{/* </div> */}
+
       </div>
     </AnimatePresence>
   );

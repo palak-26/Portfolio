@@ -25,7 +25,7 @@ const Skills = () => {
   };
 
   return (
-    <div id="Skills" className="min-h-screen w-full py-16 justify-center items-center  px-6 md:px-12 lg:px-20 flex flex-col bg-gradient-to-bl from-purple-900 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100">
+    <div id="Skills" className="min-h-screen w-full py-16 justify-center items-center  px-6 md:px-12 lg:px-20 flex flex-col dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500  dark:transition-all dark:duration-100">
       <h1 className="text-white font-bold text-3xl sm:text-4xl mb-12 text-center">My Skills Set</h1>
 
       <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-center lg:items-center  gap-12 w-full">

@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <section
       id="Contact"
-      className="min-h-screen w-full gap-20 flex flex-col items-center justify-center bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100"
+      className="min-h-screen w-full gap-20 flex flex-col items-center justify-center dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500  dark:transition-all dark:duration-100"
     >
       <div className=' w-full py-16 px-4 md:px-10 lg:px-32 flex flex-col items-center justify-center'>
         <fieldset className="w-full max-w-4xl bg-white bg-opacity-50 shadow-lg shadow-black p-6 md:p-10 rounded-3xl">

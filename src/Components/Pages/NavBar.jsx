@@ -22,8 +22,8 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className="fixed top-10 left-56 p-1 w-[70%] z-50 ">
-      <nav className={`transition-all duration-300 ${isScrolled ? "bg-white/20 shadow-md dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800/30 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} py-5`}>
+    <div className="fixed top-10 md:left-56 lg:left-56 p-1 lg:w-[70%] z-50 ">
+      <nav className={`transition-all duration-300 py-2 rounded-3xl ${isScrolled ? "bg-white/20 shadow-md dark:bg-slate-900 dark:transition-all dark:duration-100 " : "bg-white/80 backdrop-blur dark:bg-slate-800/30 dark:backdrop-blur-lg  dark:transition-all dark:duration-100"} `}>
         <div className="max-w-7xl mx-auto px-4 flex justify-around items-center rounded-3xl">
           {/* Logo + Name */}
           <div className="flex items-center gap-4  ">

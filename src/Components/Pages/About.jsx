@@ -22,7 +22,7 @@ const About = () => {
     >
       <section
       id="About"
-      className="min-h-screen w-full flex flex-col items-center justify-center px-4 md:px-10 lg:px-20 gap-y-10 bg-gradient-to-r from-purple-950 via-indigo-700 to-purple-950  dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 dark:transition-all dark:duration-100"
+      className="h-screen min-h-screen w-full flex flex-col items-center justify-center px-4 md:px-10 lg:px-20 gap-y-10 dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500  dark:transition-all dark:duration-100"
     >
       {/* Heading */}
       <div>

@@ -5,7 +5,7 @@ import photo from '../assets/palak.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-gray-900 dark:text-white py-10 px-6">
+    <footer className="bg-black dark:bg-gray-900 dark:text-white py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-evenly gap-10">
         
         {/* Avatar */}
