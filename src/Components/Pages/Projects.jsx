@@ -70,7 +70,7 @@ const Projects = () => {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.5 }}
-              className=" bg-[#a3c8eec8] backdrop-blur-3xl hover:scale-110 transition-all duration-700 flex flex-col gap-4 duration-700  lg:p-10 p-6  border-none rounded-3xl w-[100%] sm:w-64 h-96 items-center justify-center text-center shadow-md shadow-black cursor-pointer"
+              className=" bg-[#F0F8FF]  hover:scale-110 transition-all duration-700 flex flex-col gap-4 duration-700  lg:p-10 p-6  border-none rounded-3xl w-[100%] sm:w-64 h-96 items-center justify-center text-center shadow-md shadow-black cursor-pointer"
             >
               <img src={item.img} alt={item.item} className="rounded-md " />
               <h3 className="text-black font-bold text-base lg:text-lg dark:text-black ">
