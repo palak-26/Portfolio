@@ -7,6 +7,8 @@ import employee from "../../assets/Projects/EmployeeManagementSystem.png";
 import splitwise from "../../assets/Projects/Splitwise.png";
 import tttg from "../../assets/Projects/TicTacToeGame.png";
 import reverse from "../../assets/Projects/Reverse Typing Game.png";
+import chatbot from "../../assets/Projects/Chatbot Ticketing System.png";
+import ecommerce from "../../assets/Projects/E-commerce.png";
 import { FaRegArrowAltCircleRight } from 'react-icons/fa';
 
 const Projects = () => {
@@ -19,10 +21,10 @@ const Projects = () => {
     { item: "Expense Tracker", status: "In Progress", img: expense },
     { item: "Employee Management System", status: "In Progress", img: employee  },
     { item: "Splitwise Clone", status: "In Progress", img: splitwise },
-    { item: "E-Commerce Website Landing Page", status: "In Progress", img: snake },
+    { item: "E-Commerce Website Landing Page", status: "In Progress", img: ecommerce },
     { item: "Snake Game", status: "Completed", img: snake },
     { item: "Reverse Typing Game", status: "Completed", img: reverse },
-    { item: "ChatBot based Ticketing System", status: "In Progress", img: snake },
+    { item: "ChatBot based Ticketing System", status: "In Progress", img: chatbot },
   ];
 
   // Intersection Observer to trigger loading more cards
