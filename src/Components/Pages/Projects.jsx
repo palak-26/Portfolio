@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
-import snake from '../../assets/Projects/SnakeGame.png';
+import snake from '../../assets/Projects/frontpage.avif';
 import event from "../../assets/Projects/EventManagementSystem.png";
 import expense from "../../assets/Projects/ExpenseTracker.png";
 import employee from "../../assets/Projects/EmployeeManagementSystem.png";
