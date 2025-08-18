@@ -24,11 +24,7 @@ const Welcome = ({ onComplete }) => {
             Welcome!!
           </motion.h1>
         </motion.div>
-        {/* <div className="relative w-full h-screen overflow-hidden bg-black">
-   <CoderLanding/> */}
-  {/* Your typing and glitch code here */}
-{/* </div> */}
-
+        
       </div>
     </AnimatePresence>
   );

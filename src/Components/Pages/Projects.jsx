@@ -18,7 +18,7 @@ const Projects = () => {
   const projects = [
     { item: "Event Management System", status: "In Progress", img: event , github: "https://github.com/palak-26/College-Event-Management-System-.git"},
     { item: "Tic-Tac-Toe Game", status: "Completed", img: tttg ,github: "https://github.com/palak-26/miniProject_Tic-tac-toe-Game.git" },
-    { item: "Expense Tracker", status: "In Progress", img: expense },
+    { item: "Expense Tracker", status: "In Progress", img: expense , github: "https://github.com/palak-26/Expense-Tracker.git" },
     { item: "Employee Management System", status: "In Progress", img: employee  },
     { item: "Splitwise Clone", status: "In Progress", img: splitwise },
     { item: "E-Commerce Website Landing Page", status: "In Progress", img: ecommerce },
