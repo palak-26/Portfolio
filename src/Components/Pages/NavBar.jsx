@@ -52,7 +52,7 @@ const NavBar = () => {
             {[ "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
             <li key={item} className="group space-y-2">
               <Link
-                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
+                to={item === "About" ? "/" : `/${item.toLowerCase()}`}
                 className="group-hover:text-indigo-700 transition-colors duration-300 dark:group-hover:text-slate-500 "
               >
                 {item}
