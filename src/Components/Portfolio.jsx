@@ -1,5 +1,4 @@
 import NavBar from "./Pages/NavBar";
-import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Skills from "./Pages/Skills";
 import Projects from "./Pages/Projects";
@@ -11,7 +10,6 @@ const Portfolio = () => {
   return (
     <div className="min-h-screen " id="portfolio">
       <NavBar />
-      <section id="home"><Home /></section>
       <section id="about"><About /></section>
       <section id="skills"><Skills /></section>
       <section id="projects"><Projects /></section>

@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Welcome from "./Components/Pages/Welcome";
 import { AnimatePresence, motion } from "framer-motion";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Components/Pages/Home";
 import About from "./Components/Pages/About";
 import Contact from "./Components/Pages/Contact";
 import Education from "./Components/Pages/Education";
@@ -37,8 +36,7 @@ function App() {
           >
             <NavBar />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/" element={<About />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/education" element={<Education />} />

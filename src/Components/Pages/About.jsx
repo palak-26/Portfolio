@@ -1,85 +1,93 @@
-import React from 'react';
-import arrow from '../../assets/arrow.svg';
-import photo from '../../assets/palak-1.png';
-import { easeIn, motion } from 'framer-motion';
+import React from 'react'
+import photo from '../../assets/palak.png'
 import { Typewriter } from 'react-simple-typewriter';
-
+import { FaGithub, FaLinkedin, FaHackerrank, FaInstagram, FaDownload } from 'react-icons/fa';
+import { SiLeetcode, SiGeeksforgeeks, SiGmail } from 'react-icons/si';
+import {motion} from 'framer-motion'
+import { Link } from 'react-router-dom';
+import Skills from './Skills';
+import Projects from './Projects';
+import Education from './Education';
+import Contact from './Contact';
+import { FiDownload, FiDownloadCloud } from 'react-icons/fi';
 const About = () => {
-  const scale = {
-    hidden: { opacity: 0, scale: 1 },
-    visible: { opacity: 1, scale: 1.2 },
-  };
-  const opacityblur = {
-    hidden: { opacity: 0 , scale:0.5},
-    visible: { opacity: 1, scale:1},
-  };
-
+    const scale ={
+    hidden: {opacity:0 , scale:0},
+    visible:{opacity:100, scale :1},
+    wait: {duration:0.5},
+  }
   return (
-    <motion.div
-    initial={{ x:100, opacity: 0 }}
-    animate={{ x:0, opacity: 1 }}
-    transition={{ duration: 0.8 }}
-    >
-      <section
-      id="About"
-      className="h-screen min-h-screen w-full flex flex-col items-center justify-center px-4 md:px-10 lg:px-20 gap-y-10 dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500  dark:transition-all dark:duration-100"
-    >
-      {/* Heading */}
-      <div>
-        <h1 className="text-4xl sm:text-5xl mt-16 text-white font-bold mb-6 text-center">
-        About
-      </h1>
-      </div>
 
-      {/* Arrow Icon */}
-      {/* <div className="w-40 lg: my-6">
-        <img src={arrow} alt="arrow" className="mx-auto" />
+    <section id='About' >
+        <div >
+        <div id="heroSection" className='min-h-screen w-full flex flex-col-reverse justify-center items-center px-4 md:px-20 lg:px-28  dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500  dark:transition-all dark:duration-100  justify-evenly lg:flex-row items-center  ' >
+            <div id='leftSection' className='flex flex-col  gap-y-2'>
+                <h1 className='lg:text-5xl font-bold text-white md:text-3xl text-xl px-2 ' >Hi There,</h1>
+                <h1 className='text-2xl lg:text-5xl md:text-3xl font-bold text-white px-2' >I'm Palak Neekhra</h1>
+                <h3 className='text-xl lg:text-4xl md:text-xl font-bold text-white px-2' >I Am An Aspiring 
+                    <span className='text-[#A8FFEB] text-lg md:text-xl lg:text-2xl'>
+                    <Typewriter
+                       words={[" Full Stack Developer"," Java Developer"]}
+                       loop={true}
+                       cursor
+                       cursorStyle="|"
+                       typeSpeed={90}
+                       deleteSpeed={60}
+                       delaySpeed={2000}
+                    />
+                    </span>
+                </h3>
+                <button className=' w-36 text-base lg:text-lg px-1 py-2  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
+                    <a href="/resume.pdf"
+                    target='_blank'
+                    rel="noopener noreferrer"
+                    className='flex justify-evenly justify-center items-center'
+                    >Resume <a href="/resume.pdf" download ><FiDownload/></a> </a>
+                </button>
+                
 
-      {/* Content */}
-      <div className="flex flex-col  lg:flex-row gap-x-20 items-center justify-evenly justify-center  max-w-7xl w-full">
-        {/* Image */}
-        <motion.div
-          variants={scale}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: false, amount: 0.4 }}
-          transition={{ duration: 0.2, ease: easeIn }}
-        >
-          <div className='h-40 w-40 sm:h-44 sm:w-44 md:h-60 md:w-60 lg:h-72 lg:w-72'>
-            <img
-            src={photo}
-            alt="Palak"
-            className="h-full w-full scale-105 sm:h-full sm:w-full lg:h-full lg:w-full sticky top-32  object-contain  hover:scale-105 transition-all duration-700"
-          />
-          </div>
-        </motion.div>
+                <div className='flex w-fit gap-x-4 mt-2 text-lg lg:text-2xl'>
+                    <div className='h-auto w-auto  rounded-full bg-slate-950 p-2  hover:scale-105 transition-transform duration-100 shadow-lg'><a href="https://www.linkedin.com/in/palak-neekhra-98b518217/" target="_blank"><FaLinkedin className=' text-[#A8FFEB]'/></a></div>
+                    <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg'><a href="https://github.com/palak-26" target="_blank"><FaGithub className='text-[#A8FFEB]'/></a></div>
+                    <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg'><a href="https://leetcode.com/u/palak-26/" target="_blank"><SiLeetcode className='text-[#A8FFEB]'/></a></div>
+                    <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg' ><a href="https://www.geeksforgeeks.org/user/palakneekhra1234/" target="_blank"><SiGeeksforgeeks className=' text-[#A8FFEB]'/></a></div>
+                    <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg' ><a href="mailto:palakneekhra1234@gmail.com" target="_blank"><SiGmail className=' text-[#A8FFEB]'/></a></div>
+                    <div className='h-auto w-auto rounded-full bg-black p-2  hover:scale-105 transition-transform duration-100 shadow-lg' ><a href="https://www.instagram.com/palakkk____26?igsh=ZHB2eDA2Y2E1YWh5" target="_blank"><FaInstagram className=' text-[#A8FFEB]'/></a></div>
+                </div>
+            </div>
 
-        {/* Description */}
-        <motion.div
-                  variants={opacityblur}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: false, amount: 0.5 }}
-                  transition={{ duration: 0.3}}
-                >
-        <div className="bg-white/15 bg-opacity-10 dark:bg-slate-800/20 dark:backdrop-blur-lg backdrop-blur-lg rounded-3xl border-2 p-6 md:p-6 text-white w-full lg:w-full">
-          <p className="text-sm sm:text-base md:text-base lg:text-lg font-semibold leading-relaxed">
-          <Typewriter
-          words={["I’m a final-year Computer Science undergraduate who is passionate, self-motivated, and growth-driven. Known for being adaptive, optimistic, and a quick learner, I thrive in collaborative environments and enjoy working with diverse teams. I have strong communication skills, a proactive mindset, and a genuine eagerness to explore new ideas and technologies. I value continuous learning and always seek opportunities to improve and contribute meaningfully."]}
-          cursor
-          cursorStyle="|"
-          typeSpeed={50}
-          deleteSpeed={60}
-          delaySpeed={2000}
-          />
-           </p>
+            <motion.div
+            variants={scale}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: false, amount: 0.5 }}
+            transition={{ duration: 0.8 }}
+            >
+                <div className="h-44 w-44 mt-20 sm:h-56 sm:w-56 md:h-72 md:w-72 lg:h-96 lg:w-96 ">
+                    <img
+                    src={photo}
+                    alt="Palak Neekhra"
+                    className="h-full w-full rounded-full object-cover sticky shadow-black shadow-xl hover:scale-105 transition-all duration-1000 cursor-pointer"
+                    />
+                </div>
+            </motion.div>  
+             
         </div>
-        </motion.div>
-      </div>
+        <div id='skills'>
+            <Skills/>
+        </div>
+        <div id='projects'>
+            <Projects/>
+        </div>
+        <div id='education'>
+            <Education/>
+        </div>
+        <div id='Contact'>
+            <Contact/>
+        </div>
+    </div>
     </section>
-    </motion.div>
-  );
-};
+  )
+}
 
 export default About;
-            

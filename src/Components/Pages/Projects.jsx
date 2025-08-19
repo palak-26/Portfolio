@@ -55,10 +55,10 @@ const Projects = () => {
       id="Projects"
       className="relative min-h-screen w-full px-4 md:px-10 lg:px-20 py-32 flex flex-col z-30 gap-10 overflow-y-scroll scroll-smooth scrollbar-hide items-center justify-center dark:bg-gradient-to-l dark:from-[#780206] dark:to-[#061161] text-white from-[#ef32d9] bg-gradient-to-r to-teal-500 "
     >
-      {/* ✨ Neon glow background layers */}
-      {/* <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-[#9d4edd] rounded-full blur-[200px] opacity-25 z-0 "></div> */}
-      {/* <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#7b2cbf] rounded-full blur-[200px] opacity-20 z-20 dark:bg-gradient-to-bl dark:from-black dark:via-slate-800 dark:to-black"></div> */}
-      {/* <div className="absolute inset-0 bg-gradient-to-bl from-[#1a002f] via-[#6a00ff] to-[#1a002f] opacity-80 z-10 dark:dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 "></div> */}
+       {/* ✨ Neon glow background layers */ }
+      {/* // <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-[#9d4edd] rounded-full blur-[200px] opacity-25 z-0 "></div> */}
+      {/* // <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#7b2cbf] rounded-full blur-[200px] opacity-20 z-20 dark:bg-gradient-to-bl dark:from-black dark:via-slate-800 dark:to-black"></div> */}
+      {/* // <div className="absolute inset-0 bg-gradient-to-bl from-[#1a002f] via-[#6a00ff] to-[#1a002f] opacity-80 z-10 dark:dark:from-slate-950 dark:via-slate-800 dark:to-slate-950 "></div>  */}
 
       {/* Main content */}
       <div className="relative z-10 w-full flex flex-col gap-10 items-center">
