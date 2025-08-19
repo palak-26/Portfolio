@@ -49,7 +49,7 @@ const NavBar = () => {
           {/* Desktop Nav */}
           <div className="flex justify-evenly items-center mt-2 ">
             <ul className="hidden md:flex gap-6 text-black font-medium dark:text-white">
-            {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
+            {[ "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
             <li key={item} className="group space-y-2">
               <Link
                 to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -88,7 +88,7 @@ const NavBar = () => {
       exit={{ opacity: 0, x: 50 }}
       transition={{ duration: 0.4 }}
     >
-      {["Home", "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
+      {[ "About", "Skills", "Projects", "Education", "Contact"].map((item) => (
         <a
           key={item}
           href={`/#${item}`}
