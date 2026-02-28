@@ -38,11 +38,15 @@ const About = () => {
                     </span>
                 </h3>
                 <button className=' w-36 text-base lg:text-lg px-1 py-2  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
-                    <a href="/resume.pdf"
-                    target='_blank'
-                    rel="noopener noreferrer"
-                    className='flex justify-evenly justify-center items-center'
-                    >Resume <a href="/resume.pdf" download ><FiDownload/></a> </a>
+                    <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  download
+  className="w-36 text-base lg:text-lg px-4 py-2 mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold rounded-full hover:scale-105 transition-transform duration-100 flex items-center justify-center gap-2"
+>
+  Resume <FiDownload />
+</a>
                 </button>
                 
 
