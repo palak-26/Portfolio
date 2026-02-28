@@ -39,7 +39,7 @@ const About = () => {
                 </h3>
                 <button className=' w-36 text-base lg:text-lg px-1 py-2  mt-2 text-white text-center bg-violet-600 shadow-2xl font-bold border-white rounded-full hover:scale-105 transition-transform duration-100'>
                     <a
-  href="/Palak_Neekhra_Resume.pdf?v=2"
+  href="/resume.pdf?v=2"
   target="_blank"
   rel="noopener noreferrer"
   download
